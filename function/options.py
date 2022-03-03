@@ -1,30 +1,21 @@
 # fonction cprint
-
 def cprint(col, txt=1):
-    Red = '\033[91m'
-    blue = '\033[94m'
-    yellow = '\033[93m'
-    PURPLE = '\033[95m'
-    cyan = '\033[96m'
-    giskxo = '\033[97m'
-    OrAnGe = '\033[48:2:255:165:0m'
-    Green = '\033[92m'
-    ENDC = '\033[0m'
-    if col == 'Red' :
+    Red, blue, yellow, PURPLE, cyan, giskxo, OrAnGe, Green, ENDC = '\033[91m', '\033[94m', '\033[93m', '\033[95m', '\033[96m', '\033[97m', '\033[33m', '\033[92m', '\033[0m'
+    if col.lower() == 'red' :
         colr = Red
-    elif col == 'blue' :
+    elif col.lower() == 'blue' :
         colr = blue
-    elif col == 'yellow' :
+    elif col.lower() == 'yellow'  :
         colr = yellow
-    elif col == 'PURPLE' :
+    elif col.lower() == 'purple' :
         colr = PURPLE
-    elif col == 'cyan' :
+    elif col.lower() == 'cyan' :
         colr = cyan
-    elif col == 'giskxo' :
+    elif col.lower() == 'giskxo' :
         colr = giskxo
-    elif col == 'OrAnGe' :
+    elif col.lower() == 'orange' :
         colr = OrAnGe
-    elif col == 'Green' :
+    elif col.lower() == 'green' :
         colr = Green
     else :
         txt = col
