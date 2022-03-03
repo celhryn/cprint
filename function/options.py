@@ -17,7 +17,9 @@ def cprint(col, txt=1):
         colr = OrAnGe
     elif col.lower() == 'green' :
         colr = Green
-    else :
+    elif txt == 1 :
         txt = col
+        colr = ENDC
+    else :
         colr = ENDC
     print(colr, txt, ENDC)
